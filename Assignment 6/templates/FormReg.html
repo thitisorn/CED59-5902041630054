@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">
+        function Check_form() {
+            var checkName = document.forms["formRegis"]["name"].value;
+            if (checkName == "") {
+                alert("Please Enter your name");
+                document.getElementById("nametxt").focus();
+                return false;
+            }
+
+            var checkUserName = document.forms["formRegis"]["Username"].value;
+            if (checkUserName == "") {
+                alert("Please Enter Username");
+                document.getElementById("usertxt").focus();
+                return false;
+            }
+
+            var regularP = /^[a-z0-9_-]{8,18}$/;
+            var password = document.forms["formRegis"]["Password"].value;
+            var checkPass  = regularP.exec(password);
+            if (!checkPass) {
+                alert("Please Enter your Password");
+                document.getElementById("passtxt").focus();
+                return false;
+            }
+
+            var regularE = /^([\w_\.= - +]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+            var Email = document.forms["formRegis"]["Email"].value;
+            var checkEmail  = regularE.exec(Email);
+            if (!checkEmail) {
+                alert("Please Enter Email");
+                document.getElementById("emailtxt").focus();
+                return false;
+            }
+
+            if (!checkName == "" && !checkUserName == "" && checkPass && checkEmail ) {
+                alert("Every thing is Success!! :D");
+                return true;
+            } else {
+                return false;
+            }
+        }
+    </script>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/" method="post" onSubmit= "return Check_form()" name="formRegis">
+  Name:<br>
+    <input type= "text" name = "name" id = "nametxt">
+    <br>
+    Username:<br>
+    <input type= "Username" name = "Username" id = "usertxt">
+  <br>
+  Password:<br>
+  <input type="Password" name="Password" id = "passtxt"><br>
+  Email:<br>
+  <input type="text" name="Email" id = "emailtxt">
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

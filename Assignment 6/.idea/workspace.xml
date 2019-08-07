@@ -33,7 +33,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Flask server.Flask (app.py)">
+  <component name="RunManager" selected="JavaScript Debug.FormReg.html">
+    <configuration name="FormReg.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/untitled/templates/FormReg.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="Flask (app.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <option name="target" value="$PROJECT_DIR$/app.py" />
@@ -66,6 +69,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.FormReg.html" />
         <item itemvalue="Flask server.Flask (app.py)" />
       </list>
     </recent_temporary>
@@ -80,7 +84,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1564601309452</updated>
-      <workItem from="1564601312142" duration="746000" />
+      <workItem from="1564601312142" duration="1353000" />
+      <workItem from="1565192238982" duration="1038000" />
+      <workItem from="1565194048558" duration="5772000" />
     </task>
     <servers />
   </component>
