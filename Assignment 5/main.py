@@ -8,5 +8,10 @@ def index():
     return render_template('FormReg.html')
 
 
+@app.route('/', methods=["post"])
+def register():
+    return 'xyz'
+
+
 if __name__ == '__main__':
     app.run()
