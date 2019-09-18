@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,4 +15,23 @@
     {{ form.password }}
 </form>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<h1> Login Here!!!</h1>
+<form method="POST" action="/form">
+    {{ form.csrf_token }}
+    {{ form.username.label }}
+    {{ form.username }}
+    {{ form.password.label }}
+    {{ form.password }}
+    <input type="submit" value="ADD" />
+</form>
+</body>
+>>>>>>> cb93027262076c3840b0a4033c322bdcb83e8e1b
 </html>
